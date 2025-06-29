@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: my-django-app
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn carzonesearch.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: carzonesearch.settings
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: django-db
+
+databases:
+  - name: django-db

@@ -40,11 +40,11 @@ def register(request):
                     messages.error(request, 'Email already exists!')
                     return redirect('register')
                 else:
-                    # 1st and direct way -->
+                    # # 1st and direct way -->
                     user = User.objects.create_user(first_name=firstname, last_name=lastname, email=email, username=username, password=password)
-                    auth.login(request, user)
-                    messages.success(request, 'You are logged in!')
-                    return redirect('dashboard')
+                    # auth.login(request, user)
+                    # messages.success(request, 'You are logged in!')
+                    # return redirect('dashboard')
                     # 2nd way -->
                     user.save()
                     messages.success(request, 'You are registered successfully!')

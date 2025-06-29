@@ -9704,7 +9704,6 @@ table {
     }
 }
 
-
 @media (max-width: 520px) {
     .blog .blog-3{
         margin-bottom: 0;
@@ -9728,6 +9727,7 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     font-size: 14px;
     color: #c6c4c4 !important;
 }
+
 .form-control:disabled, .form-control[readonly]{
     font-size: 14px;
 }
@@ -9735,9 +9735,11 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 .form-control{
         color: #495057 !important;
 }
+
 .contact-dealer.modal-header{
     background: #f0151f !important;
 }
+
 .contact-dealer.modal-header img{
     width: 75% !important;
 }
@@ -9750,6 +9752,7 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     line-height: 49px;
     color: #f0151f;
 }
+
 .ratings-2 .cartype{
     font-weight: 600;
     font-size: 18px;
@@ -9759,7 +9762,6 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     color: #f0151f;
 }
 
-
 a.nav-link.active{
   color: #f0151f !important;
 }
@@ -9767,12 +9769,3 @@ a.nav-link.active{
 .tabbing-box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   color: #fff !important;
 }
-
-
-
-
-
-
-
-
-

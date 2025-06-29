@@ -108,8 +108,11 @@
     <div class="container">
         <!-- Main title -->
         <div class="main-title">
-            <h1>Here's your <span>Cars</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            {% if cars %}
+            <h1>Here's your <span>Cars 🚗</span></h1>
+            {% else %}
+            <p style="font-size: 2rem; color:black;">Sorry No Such Car Found 😕</p>
+            {% endif%}
         </div>
         <div class="row">
             {% for car in cars %}
